@@ -1,10 +1,10 @@
 var config = {
     style: 'mapbox://styles/mbatran/ckmhoo9t4jrvj17qklv0kaal3',
-    accessToken: 'pk.eyJ1IjoibWJhdHJhbiIsImEiOiJjazF1Ymp1dDEwMDRvM25tcXQ4amJ2dzZ5In0.qKHBiv8NcZ8B7XUz9hBWyw',
+    accessToken: 'pk.eyJ1IjoibWJhdHJhbiIsImEiOiJja24wYjc5ZGMwbTIyMnRwZmE4N2RxNzNvIn0.jbX0HTI70wGsM0nMD1ytAQ',
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'Mapped - Tokyo Real Estate Prices',
+    title: 'Tokyo Real Estate Prices',
     subtitle: '',
     byline: 'A walkthough the real estate properties prices in Tokyo',
     footer: `
@@ -70,7 +70,12 @@ Data Source: 都道府県地価調査資料
                 {
                     layer: 'yoy-trains',
                     opacity: 0
+                },
+                {
+                    layer: 'yoy-3',
+                    opacity: 0
                 }
+
             ],
             onChapterExit: [
                 {
