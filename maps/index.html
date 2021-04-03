@@ -11,6 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=B612:wght@700&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMYS4CDK6G"></script>
+  
     <style>
         body {
             margin:0; 
@@ -115,8 +124,30 @@
         </style>
 </head>
 <body>
-
-<div id="map"></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">xMap.ai</a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="https://xmap.ai">Data Source</a></li>
+                <li><a href="https://xmap.ai">日本語</a></li>
+                <li><a href="https://xmap.ai">English</a></li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>    
+      
+      <div id="map"></div>
 <div id="story"></div>
 <script src="./config.js"></script>
 <script>

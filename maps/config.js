@@ -22,7 +22,7 @@ Data Source: 都道府県地価調査資料
             `
             Tokyo, the capital of Japan is a home for alomst 14 million resident with an area of 2,194 Km2. <br> <br>
             The metropolitan economy in considered the largest in the world, with a total GDP (nominal) of approximately $1.8 trillion in 2017.
-            
+            <br>
             `,
             location: {
                 center: [139.17673, 35.69083],
