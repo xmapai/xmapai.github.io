@@ -7,13 +7,19 @@ var config = {
     title: 'Tokyo Real Estate Prices',
     subtitle: '',
     byline: 'A walkthough the real estate properties prices in Tokyo',
-    footer: `
+    footer1: `
+    <! -- 
 Designed and developed by Batran <br>batran@xmap.ai<br>
 <div style="text-align:left; padding:10px">
 Data Freshness: 令和２年 <br>
 Data Source: 都道府県地価調査資料
+-->
 </div>
-    `,    chapters: [
+    `,
+    footer: `
+    Thank you
+    `
+    ,    chapters: [
         {
             id: 'tokyo-overlay',
             title: 'Tokyo',
@@ -210,7 +216,7 @@ Data Source: 都道府県地価調査資料
         },
         {
             id: 'chuo-hist',
-            title: 'Chuo Ku ',
+            title: 'Chuo Ku Land price historical change',
             image: 'assets/chuo-hist.png',
             description:
             `
@@ -239,45 +245,15 @@ Data Source: 都道府県地価調査資料
                 }
 
              ]
-        },        {
-            id: 'chuo-hist',
-            title: 'Chuo Ku ',
-            image: 'assets/chuo-hist.png',
-            description:
-            `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
-                        `,
-            location: {
-                center: [139.76080, 35.66871],
-                zoom: 13.49,
-                pitch: 45.00,
-                bearing: 0.00
-                        },
-            onChapterEnter: [
-                {
-                    layer: 'tokyo-bound',
-                    opacity: .5
-                }
-
-            ],
-            onChapterExit: [
-                {
-                    layer: 'tokyo-bound',
-                    opacity: 0
-                }
-
-             ]
-        },
+        },        
         {
             id: 'chuo-most-expensive',
             title: 'Most Expensive Land Price In Chuo and all Tokyo',
             image: 'assets/top-4.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
+            Prices across Chuo ku change heavily depending on the location. The top most expensive land price per meter are the following four properties 
+            
             <table>
             <tr>
               <th>Address</th>
@@ -331,10 +307,11 @@ Data Source: 都道府県地価調査資料
             image: 'assets/chiyoda.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
-                        `,
+            Chiyoda City centers on the moats, gates, and pathways of the Imperial Palace East Gardens and adjoining Kokyo Gaien National Garden. Nippon Budokan hosts rock shows and martial arts tournaments, while the National Theatre stages kabuki plays and bunraku puppetry. Tokyo International Forum is a towering art and culture center. Upscale boutiques and bistros fill the busy commercial district around Tokyo Station. <br>
+            Area: 11.66 km²
+            <br>
+            Population: 66,575 (Jun 1, 2020)
+                                    `,
             location: {
 
                 center: [139.73811, 35.68140],
@@ -363,9 +340,10 @@ Data Source: 都道府県地価調査資料
             image: 'assets/chiyoda-hist.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
+            Chiyoda City centers on the moats, gates, and pathways of the Imperial Palace East Gardens and adjoining Kokyo Gaien National Garden. Nippon Budokan hosts rock shows and martial arts tournaments, while the National Theatre stages kabuki plays and bunraku puppetry. Tokyo International Forum is a towering art and culture center. Upscale boutiques and bistros fill the busy commercial district around Tokyo Station. <br>
+            Area: 11.66 km²
+            <br>
+            Population: 66,575 (Jun 1, 2020)
                         `,
             location: {
 
@@ -395,10 +373,8 @@ Data Source: 都道府県地価調査資料
             image: 'assets/shibuya.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
-                        `,
+            Shibuya is a special ward in Tokyo, Japan. A major commercial and finance center, it houses the two busiest railway stations in the world, Shinjuku Station and Shibuya Station. As of May 1, 2016, it has an estimated population of 221,801 and a population density of 14,679.09 people per km².
+                                    `,
             location: {
 
                 center: [139.68434, 35.65239],
@@ -427,10 +403,7 @@ Data Source: 都道府県地価調査資料
             image: 'assets/shibuya-hist.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
-                        `,
+            Shibuya is a special ward in Tokyo, Japan. A major commercial and finance center, it houses the two busiest railway stations in the world, Shinjuku Station and Shibuya Station. As of May 1, 2016, it has an estimated population of 221,801 and a population density of 14,679.09 people per km².                        `,
             location: {
 
                 center: [139.68434, 35.65239],
@@ -459,10 +432,8 @@ Data Source: 都道府県地価調査資料
             image: 'assets/minato.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
-                        `,
+            Minato is a special ward in Tokyo, Japan. It is also called Minato City in English. It was formed in 1947 as a merger of Akasaka, Azabu and Shiba wards following Tokyo City's transformation into Tokyo Metropolis.
+                                    `,
             location: {
 
                 center: [139.72434, 35.65239],
@@ -491,10 +462,8 @@ Data Source: 都道府県地価調査資料
             image: 'assets/minato-hist.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
-                        `,
+            Minato is a special ward in Tokyo, Japan. It is also called Minato City in English. It was formed in 1947 as a merger of Akasaka, Azabu and Shiba wards following Tokyo City's transformation into Tokyo Metropolis.
+                                    `,
             location: {
 
                 center: [139.72434, 35.65239],
@@ -523,10 +492,7 @@ Data Source: 都道府県地価調査資料
             image: 'assets/shinjuku.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
-                        `,
+            Shinjuku City encompasses the buzzing clubs and karaoke rooms of neon-lit East Shinjuku and upscale hotel bars and restaurants in the Skyscraper District. Tokyo Metropolitan Building has a popular observation deck, and Mount Hakone rises over tranquil urban parkland. Galleries, theaters, and bookstores attract students from busy campuses. New National Stadium is a high-tech sports venue built for the 2020 Olympics                        `,
             location: {
 
                 center: [139.69434, 35.70239],
@@ -555,10 +521,8 @@ Data Source: 都道府県地価調査資料
             image: 'assets/shinjuku-hist.png',
             description:
             `
-            Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
-
-            Administratively, Chūō is divided into the three zones of Nihonbashi, Kyobashi and Tsukishima. Nihonbashi and Kyobashi are predominantly commercial areas on the east side of Tokyo Station, and incorporate the famous districts of Ginza and Tsukiji. Tsukishima is a separate island in Tokyo Bay dominated by condominium towers.
-                        `,
+            Shinjuku City encompasses the buzzing clubs and karaoke rooms of neon-lit East Shinjuku and upscale hotel bars and restaurants in the Skyscraper District. Tokyo Metropolitan Building has a popular observation deck, and Mount Hakone rises over tranquil urban parkland. Galleries, theaters, and bookstores attract students from busy campuses. New National Stadium is a high-tech sports venue built for the 2020 Olympics
+                                    `,
             location: {
 
                 center: [139.69434, 35.70239],
@@ -688,7 +652,7 @@ Data Source: 都道府県地価調査資料
         {
             id: 'yoy-chuo',
             title: 'Chuo YoY ',
-            image: 'assets/yoy-bottom.png',
+            image: 'assets/yoy-legend.png',
             description:
             `
             The government of Japan announces land price areas every year in July as a  “public data”. The dataset measures land price per square meter across 2,602 different surveying locations across the prefecture. 
@@ -721,7 +685,7 @@ Data Source: 都道府県地価調査資料
         {
             id: 'taito-yoy',
             title: 'Taito YoY ',
-            image: 'assets/shibuya.png',
+            image: 'assets/yoy-legend.png',
             description:
             `
             Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
@@ -753,7 +717,7 @@ Data Source: 都道府県地価調査資料
         {
             id: 'shibuya-yoy',
             title: 'Shibuya YoY ',
-            image: 'assets/shibuya.png',
+            image: 'assets/yoy-legend.png',
             description:
             `
             Chūō is in the central area of Tokyo, surrounded by the five special wards of Chiyoda, Minato, Taitō, Sumida, and Kōtō. <br><br>
@@ -789,7 +753,7 @@ Data Source: 都道府県地価調査資料
         {
             id: 'Chuo-line',
             title: 'Chuo x Denentoshi Line ',
-            image: 'assets/shibuya.png',
+            image: 'assets/yoy-legend.png',
             description:
             `
             Chuo line and denentoshi line are  
@@ -818,7 +782,7 @@ Data Source: 都道府県地価調査資料
         {
             id: 'chuo-line-only',
             title: 'Chuo x Denentoshi Line ',
-            image: 'assets/shibuya.png',
+            image: 'assets/yoy-legend.png',
             description:
             `
             Price per meter along Chuo and Denentoshi line apprechiated on average 5% every year. 
