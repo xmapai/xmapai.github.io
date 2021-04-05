@@ -149,7 +149,19 @@
       
       <div id="map"></div>
 <div id="story"></div>
-<script src="./config.js"></script>
+
+<script>
+
+var script = document.createElement('script');
+if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+console.log('mobile')
+
+} else {
+    console.log('desktop')
+    script.src = './configs/mobile.js';
+}
+</script>
+<script src="configs/desktop.js"></script>
 <script>
 var layerTypes = {
     'fill': ['fill-opacity'],
@@ -159,7 +171,6 @@ var layerTypes = {
     'raster': ['raster-opacity'],
     'fill-extrusion': ['fill-extrusion-opacity']
 }
-
 var alignments = {
     'left': 'lefty',
     'center': 'centered',
