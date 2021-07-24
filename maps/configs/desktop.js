@@ -4,9 +4,9 @@ var config = {
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'Tokyo Real Estate Prices',
+    title: 'Tokyo Land Prices Report',
     subtitle: '',
-    byline: 'A walkthough the real estate properties prices in Tokyo',
+    byline: 'A walkthough Tokyo land prices and land prices change in Tokyo.',
     footer1: `
     <! -- 
 Designed and developed by Batran <br>batran@xmap.ai<br>
@@ -17,7 +17,7 @@ Data Source: 都道府県地価調査資料
 </div>
     `,
     footer: `
-    Thank you
+    Thank you,  You can download a PDF report at the end of the page.
     `
     ,    chapters: [
         {
@@ -104,7 +104,7 @@ Data Source: 都道府県地価調査資料
             description:
             `
             The Greater Tokyo Area is the most populous metropolitan area in the world, with more than 37.393 million residents as of 2020 <br> 
-            Population density at 6,158 persons per square kilometer.             
+            Population density at 6,158 persons per square kilometer <a href="https://www.un.org/en/events/citiesday/assets/pdf/the_worlds_cities_in_2018_data_booklet.pdf"> [Ref]</a>.             
             `,
             location: {
                 center: [139.17673, 35.69083],
@@ -132,7 +132,7 @@ Data Source: 都道府県地価調査資料
         {
             id: 'lnd-prices',
             title: 'Land Prices Survey Data ',
-            image: '',
+            image: 'assets/legend-points.png',
             description:
             `
             The government of Japan announces land price areas every year in July as a  “public data”. The dataset measures land price per square meter across 2,602 different surveying locations across the prefecture. 
