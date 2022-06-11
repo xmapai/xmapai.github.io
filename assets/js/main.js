@@ -15,7 +15,7 @@
 
     // === logo change
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/xmap.svg";
+      logo.src = "assets/images/logo/logo2.svg";
     } else {
       logo.src = "assets/images/logo/logo.svg";
     }
