@@ -14,24 +14,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>xMap|Retail Intelligence </title>
+    <title>xMap|Data Intelligence </title>
 
     <!-- Primary Meta Tags -->
-<meta name="title" content="xMap | Smart Targeting">
-<meta name="description" content="xMap | Smart Targeting">
+<meta name="title" content="xMap | Data Intelligence">
+<meta name="description" content="xMap | Data Intelligence">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://xmap.ai">
-<meta property="og:title" content="xMap | Smart Targeting">
-<meta property="og:description" content="xMap | Smart Targeting">
+<meta property="og:title" content="xMap | Data Intelligence">
+<meta property="og:description" content="xMap | Data Intelligence">
 <meta property="og:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://xmap.ai">
-<meta property="twitter:title" content="xMap | Smart Targeting">
-<meta property="twitter:description" content="xMap | Smart Targeting">
+<meta property="twitter:title" content="xMap | Data Intelligence">
+<meta property="twitter:description" content="xMap | Data Intelligence">
 <meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
 
     <!--====== Favicon Icon ======-->
@@ -46,6 +46,40 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
     <link rel="stylesheet" href="assets/css/ud-styles.css" />
+     
+    <!-- ===== All scripts files ===== -->
+    <script
+    defer
+    src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"
+  />
+
+  
+
+<style type="text/css">
+  img-comparison-slider {
+    --divider-width: 2px;
+    --divider-color: #6c6868;
+    --default-handle-opacity: 1;
+    --divider-shadow	: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    --default-handle-color	: rgba(0, 0, 0, 0.5);
+    --default-handle-shadow	: 1px 1px 5px rgba(0, 0, 0, 1)
+
+  }
+
+  custom-animated-handle {
+    transition: transform 0.2s;
+  }
+
+  slider-with-animated-handle:hover custom-animated-handle {
+    transform: scale(1.2);
+  }
+
+</style>
+
   </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -65,18 +99,19 @@
 
               <div class="navbar-collapse">
                 <ul id="nav" class="navbar-nav mx-auto">
+                  
                   <li class="nav-item">
                     <a class="ud-menu-scroll" href="#home">Home</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#about">About</a>
+                    <a class="ud-menu-scroll" href="#data">Data</a>
                   </li>
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#pricing">FAQ</a>
+                    <a class="ud-menu-scroll" href="#pricing">Pricing</a>
                   </li>
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#team">Team</a>
+                    <a class="ud-menu-scroll" href="#products">Products</a>
                   </li>
                   <li class="nav-item">
                     <a class="ud-menu-scroll" href="#contact">Contact</a>
@@ -130,8 +165,8 @@
               </div>
 
               <div class="navbar-btn d-none d-sm-inline-block">
-                <a class="ud-main-btn ud-white-btn" href="#contact">
-                  Reserve a demo
+                <a class="ud-main-btn ud-white-btn" target=”_blank” href="https://calendly.com/batran-xmap/30min">
+                  book a demo
                 </a>
               </div>
             </nav>
@@ -148,15 +183,15 @@
           <div class="col-lg-12">
             <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
               <h1 class="ud-hero-title">
-                Bringing Intelligence To The Retail Industry. 
+                 Buy Location Data for <span class="mov" style="background-color:rgb(255, 255, 255); color: black;"> </span>  
               </h1>
               <p class="ud-hero-desc">
-                We monitor the market, track product popularity, assign your sales and marketing team to areas with maximum potential
+                in Japan 
                </p>
               <ul class="ud-hero-buttons">
                 <li>
                   <a href="#contact" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-white-btn">
-                    Reserve a demo
+                    Get a free sample
                   </a>
                 </li>
                 
@@ -179,7 +214,7 @@
             >
             </div>
             <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
-              <img src="assets/images/hero/hero-image.svg" alt="hero-image" />
+              <img src="assets/images/hero/hero.png" alt="hero-image" />
               <img
                 src="assets/images/hero/dotted-shape.svg"
                 alt="shape"
@@ -197,97 +232,304 @@
     </section>
     <!-- ====== Hero End ====== -->
 
-    <!-- ====== Features Start ====== -->
-    <section id="features" class="ud-features">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ud-section-title">
-              <span>Features</span>
-              <h2>Main Features</h2>
-              <p>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
-              <div class="ud-feature-icon">
-                <i class="lni lni-gift"></i>
-              </div>
-              <div class="ud-feature-content">
-                <h3 class="ud-feature-title">Market Monitoring</h3>
-                <p class="ud-feature-desc">
-                  Monitor food service aggregators to understand market trend and menue opportunitiess
-                </p>
-                <a href="javascript:void(0)" class="ud-feature-link">
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
-              <div class="ud-feature-icon">
-                <i class="lni lni-move"></i>
-              </div>
-              <div class="ud-feature-content">
-                <h3 class="ud-feature-title">Better Sales Targeting</h3>
-                <p class="ud-feature-desc">
-                  There are more than 90,000 Resturants in Tokyo and over 600,000 in all Japan. We help you chose which one to prioritize with higer success rate
-                </p>
-                <a href="javascript:void(0)" class="ud-feature-link">
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
-              <div class="ud-feature-icon">
-                <i class="lni lni-layout"></i>
-              </div>
-              <div class="ud-feature-content">
-                <h3 class="ud-feature-title">Product Innovation</h3>
-                <p class="ud-feature-desc">
-                  Find the best food product for a specific geography or find the best geography for your new foodl product based on consumer preference and competition.
-                </p>
-                <a href="javascript:void(0)" class="ud-feature-link">
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== Features End ====== -->
+
 
     <!-- ====== About Start ====== -->
-    <section id="about" class="ud-about">
+    <section id="data" class="ud-about">
       <div class="container">
-        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s" style="align-items: center;">
           <div class="ud-about-content-wrapper">
             <div class="ud-about-content">
-              <span class="tag">About Us</span>
-              <h2>Brining intelligence to the retail industry</h2>
+              <span class="tag">Data Catalog</span>
+              <h2>Adminstrative boundaries</h2>
               <p>
-                We are focused on Japan market food and retail industry and we've collected some of the most valuable datasets.            </p>
+                Clean, pre-processed, and documented adminstrative boundary data.</p>
 
               <p>
-                Our bots are constantly collecting market information and processing them to output granual insights.
-              </p>
-              <a href="#contact" class="ud-main-btn">Reserve a Demo</a>
+                <h4>Available formats</h4>
+                <span class="data-tag">Parquet</span>
+                <span class="data-tag">CSV</span>
+                <span class="data-tag">Shapefile</span>
+            </p>
             </div>
           </div>
-          <div class="ud-about-image">
-            <img src="assets/images/about/about-image.svg" alt="about-image" />
+          <div class="ud-about-image img-thumbnail"  style="margin: 10px; padding: 10px;">
+            <img src="assets/images/gif/admins_.gif" alt="admin-image" width="1000px"/>
           </div>
         </div>
       </div>
     </section>
     <!-- ====== About End ====== -->
+
+
+
+    <!-- ====== uber Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s" style="align-items: center;">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Data Catalog</span>
+              <h2>Online Restaurants Location</h2>
+              <p>
+                Clean, pre-processed, structured and enriched data. The data is associated with all documents and assessment sheets.</p>
+
+              <p>
+                <h4>Available formats</h4>
+                <span class="data-tag">Parquet</span>
+                <span class="data-tag">CSV</span>
+                <span class="data-tag">Shapefile</span>
+            </p>
+            </div>
+          </div>
+          <div class="ud-about-image img-thumbnail"  style="margin: 10px; padding: 10px;">
+            <img src="assets/images/gif/uber.gif" alt="admin-image"  width="1000px"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== uber End ====== -->
+
+
+    <!-- ====== master Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s" style="align-items: center;">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Data Catalog</span>
+              <h2>Master Restaurants Location</h2>
+              <p>
+                The Most enriched restaurants dataset in Japan. ~600,000 restaurant with more than 170 attribute</p>
+
+              <p>
+                <h4>Available formats</h4>
+                <span class="data-tag">Parquet</span>
+                <span class="data-tag">CSV</span>
+                <span class="data-tag">Shapefile</span>
+            </p>
+            </div>
+          </div>
+          <div class="ud-about-image img-thumbnail"  style="margin: 10px; padding: 10px;">
+            <img src="assets/images/gif/master.gif" alt="admin-image"  width="1000px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== master End ====== -->
+
+    <!-- ====== Population Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s" style="align-items: center;">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Data Catalog</span>
+              <h2>High Resolution Population Data</h2>
+              <p>
+                The highest population data in Japan as a 100 meters x 100 meters resolution</p>
+
+              <p>
+                <h4>Available formats</h4>
+                <span class="data-tag">Parquet</span>
+                <span class="data-tag">CSV</span>
+                <span class="data-tag">Shapefile</span>
+            </p>
+            </div>
+          </div>
+          <div class="ud-about-image img-thumbnail"  style="margin: 10px; padding: 10px;">
+            <img-comparison-slider slider-with-animated-handle>
+            <img slot="first" src="assets/images/gif/1.png" width="1000px"/>
+            <img slot="second" src="assets/images/gif/2.png" width="1000px" />
+            <svg slot="handle" class="custom-animated-handle" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="-8 -3 16 6">
+              <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#000000" vector-effect="non-scaling-stroke"></path>
+            </svg>          
+          </img-comparison-slider>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Population End ====== -->
+
+
+
+    <!-- ====== boards Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s" style="align-items: center;">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Data Catalog</span>
+              <h2>Billboards Data</h2>
+              <p>
+                Billboards dataset covering all Japan. ~15,000 point enirhced with many attributes</p>
+
+              <p>
+                <h4>Available formats</h4>
+                <span class="data-tag">Parquet</span>
+                <span class="data-tag">CSV</span>
+                <span class="data-tag">Shapefile</span>
+            </p>
+            </div>
+          </div>
+          <div class="ud-about-image img-thumbnail"  style="margin: 10px; padding: 10px;">
+            <img src="assets/images/gif/boards.png" alt="admin-image"  width="1000px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== boards End ====== -->
+
+
+        <!-- ====== Quality Start ====== -->
+        <section id="quality" class="ud-features">
+          <div class="container">
+            <div class="row">
+                <div class="ud-section-title2">
+                  <h2>Clean, Rich and ready to use dataset</h2>
+                  <p>
+                    Drag the slider right and left to review
+                  </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ud-about-image img-thumbnail"  style="margin: 10px; padding: 10px;">
+                <img-comparison-slider slider-with-animated-handle>
+                <img slot="first" src="assets/images/gif/data_1.png" width="100%"/>
+                <img slot="second" src="assets/images/gif/data_2.png" width="100%" />
+                <svg slot="handle" class="custom-animated-handle" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="-8 -3 16 6">
+                  <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#000000" vector-effect="non-scaling-stroke"></path>
+                </svg>          
+              </img-comparison-slider>
+              </div>
+    
+            </div>
+          </div>
+        </section>
+        <!-- ====== Quality End ====== -->
+
+
+
+
+    <!-- ====== master Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s" style="align-items: center;">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Analytics</span>
+              <h2>Analytics for your business need</h2>
+              <p>
+                Drive Marketing / sales or customize the usecase directly with xMap analytics</p>
+
+              <p>
+                <h4>Features</h4>
+                <span class="data-tag">Data visualization</span>
+                <span class="data-tag">Reporting</span>
+                <span class="data-tag">Sheet generation</span>
+            </p>
+            </div>
+          </div>
+          <div class="ud-about-image img-thumbnail"  style="margin: 10px; padding: 10px;">
+            <img src="assets/images/gif/shibuya.png" alt="admin-image"  width="1000px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== master End ====== -->
+
+
+    <!-- ====== Pricing Start ====== -->
+    <section id="pricing" class="ud-pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title mx-auto text-center">
+              <span>Sales</span>
+              <h2>Our Sales Process</h2>
+              <p>
+                A process designed to help you achieve the most results with our data 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing first-item wow fadeInUp"
+              data-wow-delay=".15s"
+              style="margin: 10px;"
+            >
+              <div class="ud-pricing-header">
+                <h3>(1)</h3>
+                <h4>Sample Data</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>Sample data</li>
+                  <li>Data specification document</li>
+                  <li>Data asessment sheet</li>
+                </ul>
+              </div>
+              <div style="background-color: aquamarine; margin: 40px; border-radius: 5px">
+                <h4 style="padding: 10px;">Free</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing first-item wow fadeInUp"
+              data-wow-delay=".1s"
+              style="margin: 10px;"
+
+            >
+              <div class="ud-pricing-header">
+                <h3>(2)</h3>
+                <h4>Meeting</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>Meet a consultant</li>
+                  <li>Data integration requirement</li>
+                  <li>Usecases confirmation</li>
+                </ul>
+              </div>
+              <div style="background-color: aquamarine; margin: 40px;border-radius: 5px">
+                <h4 style="padding: 10px;">Free</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing first-item wow fadeInUp"
+              data-wow-delay=".15s"
+              style="margin: 10px;"
+
+            >
+              <div class="ud-pricing-header">
+                <h3>(3)</h3>
+                <h4>Contract</h4>
+              </div>
+              <div class="ud-pricing-body">
+                <ul>
+                  <li>Data license contract</li>
+                  <li>Data ingestion support</li>
+                  <li>Data updates</li>
+                </ul>
+              </div style="background-color:">
+              <div style="border:1px solid black; border-radius: 5px; margin: 40px">
+                <h4 style="padding: 10px;">Payment</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Pricing End ====== -->
 
 
     <!-- ====== FAQ Start ====== -->
@@ -302,7 +544,7 @@
               <span>FAQ</span>
               <h2>What our clients asked us before</h2>
               <p>
-                a set of questions around reatil Intelligence  
+                Top brands in Japan are using xMap data  
               </p>
             </div>
           </div>
@@ -320,11 +562,11 @@
                   <span class="icon flex-shrink-0">
                     <i class="lni lni-chevron-down"></i>
                   </span>
-                  <span>Can we use xMap service for Japan Market?</span>
+                  <span>Can we communicate in Japanese?</span>
                 </button>
                 <div id="collapseOne" class="accordion-collapse collapse">
                   <div class="ud-faq-body">
-                     Yes, our primary market is Japan.
+                     Yes, our primary market is Japan and our team speak Japanese.
                   </div>
                 </div>
               </div>
@@ -339,11 +581,11 @@
                   <span class="icon flex-shrink-0">
                     <i class="lni lni-chevron-down"></i>
                   </span>
-                  <span>Can I just buy data to use in my data science or ai product?</span>
+                  <span>Can I get a free sample?</span>
                 </button>
                 <div id="collapseTwo" class="accordion-collapse collapse">
                   <div class="ud-faq-body">
-                    Yes, we offer data as a service too. 
+                    Yes, we offer free sample before buying the data. 
                   </div>
                 </div>
               </div>
@@ -358,20 +600,269 @@
                   <span class="icon flex-shrink-0">
                     <i class="lni lni-chevron-down"></i>
                   </span>
-                  <span>Can we speak in Japanese?</span>
+                  <span>Does xMap support data integration?</span>
                 </button>
                 <div id="collapseThree" class="accordion-collapse collapse">
                   <div class="ud-faq-body">
-                    Yes, our team has Japanese and english team.
+                    Yes, Our team support integerating data into your existing database or warehouse. 
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>How do I trust the data?</span>
+                </button>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    You will receive a data assessment sheet containing all metrics about data. xMap team is from data science background and data quality is our priority.  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>What documentation do I get with the data?</span>
+                </button>
+                <div id="collapse5" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    You will receive 3 things: (1): Data file (2): Data assessment sheet (3): Data documentation explaining all columns  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>We do not have data analyst, can you analyse the data for us?</span>
+                </button>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Yes, we can analyze the data for you and share the insights directly  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            <div class="col-lg-6">
+
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse6"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Can we use xMap data for machine learning modeling?</span>
+                </button>
+                <div id="collapse6" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Yes, our data can be used for machine learning modeling for retail, sales and marketing and more. We can offer you free consultation on how to use the data.   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse7"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>How do we get data updates?</span>
+                </button>
+                <div id="collapse7" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    You will receive the data updates through cloud services such as Google Cloud Storage or AWS S3.   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse8"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Our team wants to buy the data, but the legal team want's information on how the data is collected. Can you provide such information?</span>
+                </button>
+                <div id="collapse8" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Yes, we dealt with multiple cases like this before.   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse9"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>We need the data aggregated, can you aggregate the data?</span>
+                </button>
+                <div id="collapse9" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    We can process the data into the shape that suits your preference.    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse10"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>We do not have data science team, can you offer consulting service?</span>
+                </button>
+                <div id="collapse10" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    We offer consulting service around our data applications.    
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
           </div>
         </div>
       </div>
     </section>
     <!-- ====== FAQ End ====== -->
+
+
+
+    <!-- ====== Products Start ====== -->
+    <section id="products" class="ud-pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title mx-auto text-center">
+              <h2>Our Products</h2>
+              <p>
+                Access our data in the best way that suit your business 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing first-item wow fadeInUp"
+              data-wow-delay=".15s"
+              style="margin: 10px;"
+            >
+              <div class="ud-pricing-header">
+                <h4>Data</h4>
+
+                <img src="assets/images/icons/data-cleaning.png" width="150">
+              </div>
+              <div class="ud-pricing-body">
+              </div>
+              <div style="background-color: aquamarine; margin: 40px; border-radius: 5px">
+                
+                <h4 style="padding: 10px;">
+                  <a href="#contact"> Get a free sample</a> </h4>
+              
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing first-item wow fadeInUp"
+              data-wow-delay=".1s"
+              style="margin: 10px;"
+
+            >
+              <div class="ud-pricing-header">
+                <h4>Dashboard</h4>
+
+                <img src="assets/images/icons/monitor.png" width="150">
+              </div>
+              <div class="ud-pricing-body">
+              </div>
+              <div style="background-color: hsl(0, 0%, 78%); margin: 40px; border-radius: 5px">
+                <h4 style="padding: 10px;">Soon</h4>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <div
+              class="ud-single-pricing first-item wow fadeInUp"
+              data-wow-delay=".15s"
+              style="margin: 10px;"
+
+            >
+              <div class="ud-pricing-header">
+                <h4>API</h4>
+
+                <img src="assets/images/icons/browser.png" width="150">
+              </div>
+              <div class="ud-pricing-body">
+              </div>
+              <div style="background-color: hsl(0, 0%, 78%); margin: 40px; border-radius: 5px">
+                <h4 style="padding: 10px;">Soon</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Products End ====== -->
+
 
     <!-- ====== Testimonials Start ====== -->
 
@@ -529,6 +1020,8 @@
     Testimonials Start ====== -->
 
     <!-- ====== Team Start ====== -->
+
+    <!-- ======
     <section id="team" class="ud-team">
       <div class="container">
         <div class="row">
@@ -537,13 +1030,38 @@
               <span>Our Team</span>
               <h2>Meet The Team</h2>
               <p>
-                Experts in data science solutions for retail.
+                Experts in data Intelligence.
               </p>
             </div>
           </div>
         </div>
 
         <div class="row">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
+              <div class="ud-team-image-wrapper">
+                <div class="ud-team-image">
+                  <img src="assets/images/team/umar.png" alt="team" />
+                </div>
+
+                <img
+                  src="assets/images/team/dotted-shape.svg"
+                  alt="shape"
+                  class="shape shape-1"
+                />
+                <img
+                  src="assets/images/team/shape-2.svg"
+                  alt="shape"
+                  class="shape shape-2"
+                />
+              </div>
+              <div class="ud-team-info">
+                <h5>Umar Saito</h5>
+                <h6>Country Manager</h6>
+              </div>
+            </div>
+          </div>
+
           <div class="col-xl-3 col-lg-3 col-sm-6">
             <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
               <div class="ud-team-image-wrapper">
@@ -566,23 +1084,6 @@
                 <h5>Batran</h5>
                 <h6>AI Specialist</h6>
               </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="#">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
           <div class="col-xl-3 col-lg-3 col-sm-6">
@@ -607,64 +1108,6 @@
                 <h5>Abdo Kamr</h5>
                 <h6>Data Scientist</h6>
               </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="#">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src="assets/images/team/umar.png" alt="team" />
-                </div>
-
-                <img
-                  src="assets/images/team/dotted-shape.svg"
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src="assets/images/team/shape-2.svg"
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>Umar Saito</h5>
-                <h6>Business Development</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="#">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
           <div class="col-xl-3 col-lg-3 col-sm-6">
@@ -689,24 +1132,6 @@
                 <h5>Hany Elshafey</h5>
                 <h6>Geospatial data scientist</h6>
               </div>
-              
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="#">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
 
@@ -732,33 +1157,99 @@
                 <h5>Manar Reda</h5>
                 <h6>Data Analyst</h6>
               </div>
-              
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="#">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
 
         </div>
       </div>
     </section>
+
+    ====== -->
     <!-- ====== Team End ====== -->
 
-    <!-- ====== Contact Start ====== -->
+        <!-- ====== Contact Start ====== -->
+
+        <section id="contact" class="ud-contact">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-8 col-lg-7">
+                <div class="ud-contact-content-wrapper">
+                  <div class="ud-contact-title">
+                    <span>CONTACT US</span>
+                    <h2>
+                      Send us a message <br />
+                      We will reply back as soon as possible!
+                    </h2>
+                  </div>
+                  <div class="ud-contact-info-wrapper">
+                    <div class="ud-single-info">
+                      <div class="ud-info-icon">
+                        <i class="lni lni-map-marker"></i>
+                      </div>
+                      <div class="ud-info-meta">
+                        <h5>Our Location</h5>
+                        <p>1-6-5 Jinnan, Shibuya City, Tokyo 150-0041</p>
+                      </div>
+                    </div>
+                    <div class="ud-single-info">
+                      <div class="ud-info-icon">
+                        <i class="lni lni-envelope"></i>
+                      </div>
+                      <div class="ud-info-meta">
+                        <h5>How Can We Help?</h5>
+                        <p>contact@xmap.ai</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5">
+                <div
+                  class="ud-contact-form-wrapper wow fadeInUp"
+                  data-wow-delay=".2s"
+                >
+                  <h3 class="ud-contact-form-title">Send us a Message</h3>
+                  <form class="ud-contact-form", action="https://formsubmit.co/5a0f8fec9228a46262c629763c903556"
+                  method="POST"
+              >
+                    <div class="ud-form-group">
+                      <label for="fullName">Full Name*</label>
+                      <input
+                        type="text"
+                        name="fullName"
+                        placeholder="Adam Gelius"
+                      />
+                    </div>
+                    <div class="ud-form-group">
+                      <label for="email">Email*</label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="example@yourmail.com"
+                      />
+                    </div>
+                    <div class="ud-form-group">
+                      <label for="message">Message*</label>
+                      <textarea
+                        name="message"
+                        rows="1"
+                        placeholder="type your message here"
+                      ></textarea>
+                    </div>
+                    <div class="ud-form-group mb-0">
+                      <button type="submit" class="ud-main-btn">
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+    <!-- ====== 
     <section id="contact" class="ud-faq">
       <ul class="ud-hero-buttons">
         <li>
@@ -770,7 +1261,9 @@
       </ul>
 
     </section>
+    ====== -->
     <!-- ====== Contact End ====== -->
+     
 
     <!-- ====== Footer Start ====== -->
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
@@ -794,6 +1287,7 @@
                 <p class="ud-widget-desc">
                   We create and process data daily for our retail clients to grow.
                 </p>
+<!-- ======
                 <ul class="ud-widget-socials">
                   <li>
                     <a href="#">
@@ -816,6 +1310,8 @@
                     </a>
                   </li>
                 </ul>
+====== -->
+
               </div>
             </div>
 
@@ -824,32 +1320,32 @@
                 <h5 class="ud-widget-title">About Us</h5>
                 <ul class="ud-widget-links">
                   <li>
-                    <a href="javascript:void(0)">Home</a>
+                    <a href="#">Home</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Features</a>
+                    <a href="#data">Data</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">About</a>
+                    <a href="#pricing">Pricing</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Testimonial</a>
+                    <a href="#products">Products</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
               <div class="ud-widget">
-                <h5 class="ud-widget-title">Features</h5>
+                <h5 class="ud-widget-title">Data</h5>
                 <ul class="ud-widget-links">
                   <li>
-                    <a href="javascript:void(0)">Retail Market Intelligence</a>
+                    <a href="#data">Retail data</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Product Innovation</a>
+                    <a href="#data">Population data</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Sales Automation</a>
+                    <a href="#data">Advertisement data</a>
                   </li>
                 </ul>
               </div>
@@ -913,5 +1409,17 @@
 
       window.document.addEventListener("scroll", onScroll);
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".mov",{
+    strings: [,  "Restaurants","Cafes","Stores", "Billboards"] ,
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+
+    })
+</script>
+
   </body>
 </html>
