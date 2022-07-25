@@ -2625,6 +2625,7 @@ p {
   color: var(--white);
 }
 
+
 @media (max-width: 767px) {
   .ud-404-links a {
     margin: 5px 10px;
