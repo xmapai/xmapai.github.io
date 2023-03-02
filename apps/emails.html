@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Email Permutator | xMap</title>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="description" content="">
+	<!-- Bootstrap -->
+	<link href="./email/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="./email/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	<link href="./email/bootstrap-modal.css" rel="stylesheet" media="screen">
+	<link href="./email/animate-custom.css" rel="stylesheet" media="screen">
+	<link href="./email/mainstyles.css" rel="stylesheet" media="screen">
+
+	<!-- Google Analytics Code -->
+	<script type="text/javascript" async="" src="./email/ga.js"></script><script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-34445619-1']);
+	  _gaq.push(['_setDomainName', 'xmap.ai']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+<script type="text/javascript" data-name="TokenSigning" data-by="Web-eID extension" src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script></head>
+
+<body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="" class="" data-new-gr-c-s-loaded="14.1098.0">
+	<div id="wrap">
+		<div id="the-line"></div>
+
+		<div class="container">
+
+			<div id="middle-center-zone">
+				<!-- This is the Standing Sparrow-->
+				<div id="talking-sparrow">
+					<div id="mr-sparrow"></div>
+					<div id="sparrow-message"></div>
+				</div>
+
+				<div id="permuteholder">
+					<h1>Permutate Email</h1>
+					<p>Inspired by Rob Ousbey & Jesse Avshalomov</a></p>
+
+					<div class="the-fields">
+						<!-- Name Fields -->
+						<div class="control-group warning">
+							<div class="input-prepend">
+								<span class="add-on">First Name</span>
+								<input type="text" id="firstName" class="just-right required" placeholder="Mo">
+							</div>
+						</div>
+
+						<div class="control-group warning">
+							<div class="input-prepend">
+								<span class="add-on">last Name</span>
+								<input type="text" id="lastName" class="just-right required" placeholder="Batran">
+							</div>
+						</div>
+
+						<div class="control-group optional">
+							<div class="input-prepend">
+								<span class="add-on">Middle Name</span>
+								<input type="text" id="middleName" class="just-right" placeholder="(Middle Name)">
+							</div>
+						</div>
+
+						<div class="control-group optional">
+							<div class="input-prepend">
+								<span class="add-on">Nickname</span>
+								<input type="text" id="nickName" class="just-right" placeholder="(Nickname)">
+							</div>
+						</div>
+
+						<!-- Domain Fields -->
+						<div class="control-group warning">
+							<div class="input-prepend">
+								<span class="add-on">Domain</span>
+								<input type="text" id="domain1" class="just-right required" placeholder="xmap.ai">
+							</div>
+						</div>
+
+
+						<div class="control-group not-initial optional" style="display: none;">
+							<div class="input-prepend">
+								<span class="add-on">@</span>
+								<input type="text" id="domain2" class="just-right" placeholder="(Domain)">
+							</div>
+						</div>
+
+						<div class="control-group not-initial optional" style="display: none;">
+							<div class="input-prepend">
+								<span class="add-on">@</span>
+								<input type="text" id="domain3" class="just-right" placeholder="(Domain)">
+							</div>
+						</div>
+
+						<a class="btn btn-mini" href="#" id="fewer-domains" style="display: none;"><i class="icon-minus-sign"></i> Fewer Domains</a>
+
+					</div>
+
+
+
+					<button class="btn btn-large btn-primary" type="button" id="permutateBtn"><i class="icon-envelope icon-white"></i> Permutate!</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<!-- 
+	<div class="row span8" id="output"></div> -->
+
+
+	<!-- Button to trigger modal -->
+	<!-- <a href="#modalResult" role="button" class="btn" data-toggle="modal">Launch demo modal</a> -->
+
+	<!-- Modal Result-->
+	
+
+
+	<!-- Modal Information-->
+	<div class="modal hide fade" id="modalInfo" data-width="580">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>About Email Permutator+</h3>
+		</div>
+		<div class="modal-body">
+<!-- 			<p>Introduction.   How to use this tool</p>
+			<p>Introduction</p> -->
+			<p>This tool is intended to help you find the email addresses of people you need to contact, extending and refining the functionality of the <a href="https://docs.google.com/spreadsheet/ccc?key=0AoW7aksoVU98dGNFSUtfeXg4akpNTWM0Z2pHWjJzZUE#gid=0" target="_blank">permutator spreadsheet</a> discussed in Rob Ousbey's excellent post <a href="http://www.distilled.net/blog/miscellaneous/find-almost-anybodys-email-address/" target="_blank">Find (Almost) Anyone's Email Address</a>.</p>
+
+			<p>New Features:</p>
+			<ul>
+				<li><strong>Multiple Domains</strong> - So you don't have to run each individually </li>
+				<li><strong>Nickname field</strong> - Because your contact may go by either 'Tom' or 'Thomas'</li>
+				<li><strong>Auto Whitespace Removal</strong> - In case your copying and pasting gets a little crazy</li>
+				<li><strong>Direct Copy to Clipboard</strong> - With the click of a button</li>
+				<li><strong>Shiny Interface</strong> - Because it's nice when tools are pretty</li>
+				<li><strong>Nixed Redundant Emails</strong> -<br>
+				So you'll never see a middle name based email if you don't enter a middle name,<br> nor a nickname-initial email if it'd be a duplicate of the first-initial email</li>
+				<li><strong>Cross-Domain Prioritization</strong> -<br>
+				To make sure the most likely emails across all entered domains appear first<br> 
+				(rather than providing all emails for one domain, then the next, and so on)</li>
+			</ul>
+
+		</div>
+	</div>
+
+		<!-- Modal How To-->
+	
+
+
+	<!-- Modal Bio-->
+	
+
+
+
+
+
+
+<script type="text/javascript" src="./email/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-backup.js"></script> -->
+<script type="text/javascript" src="./email/bootstrap.min.js"></script>
+<script type="text/javascript" src="./email/bootstrap-modalmanager.js"></script>
+<script type="text/javascript" src="./email/bootstrap-modal.js"></script>
+<script type="text/javascript" src="./email/ZeroClipboard.js"></script>
+<script type="text/javascript" src="./email/permute.js"></script>
+
+
+
+
+<div class="modal hide fade" id="modalHowto" data-width="470" aria-hidden="true" tabindex="-1" style="display: none; width: 470px; margin-left: -235px; margin-top: -229.5px;">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>How to use this tool</h3>
+		</div>
+		<div class="modal-body">
+			<p><strong>Step 1:</strong> Enter name information for your contact into the fields provided, including nickname (Jeff vs Jeffery) and middle name (middle initial ok) if available.<br><br>
+			<strong>Step 2:</strong> Enter up to three domains at which this contact is likely to have an email address.<br><br>
+			<strong>Step 3:</strong> Click 'Permutate' and copy the resulting email addresses.<br><br>
+			<strong>Step 4:</strong> Paste these email addresses into a Gmail email with <a href="http://rapportive.com/" target="_blank">Raportive</a> installed, then mouse through each email address until Raportive displays social profiles for one, and <em>Voila!</em> You've found an active email address!</p>
+			<p>For more details see Rob Ousbey's excellent post: <a href="http://www.distilled.net/blog/miscellaneous/find-almost-anybodys-email-address/" target="_blank">Find (Almost) Anyone's Email Address</a>.</p>
+
+		</div>
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>Bio</h3>
+		</div>
+	</div><div class="modal hide fade" id="modalResult" data-width="460" aria-hidden="true" tabindex="-1" style="display: none; width: 460px; margin-left: -230px; margin-top: -179.5px;">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="h1-in-modal"><span>34</span> Emails Permutated!</h3>
+		</div>
+		<div class="modal-body">
+			<div id="centerTxtArea">
+				<textarea rows="10" id="finalResult" spellcheck="true">mohamed@xmap.ai
+batran@xmap.ai
+mohamedbatran@xmap.ai
+mohamed.batran@xmap.ai
+mbatran@xmap.ai
+m.batran@xmap.ai
+mohamedb@xmap.ai
+mohamed.b@xmap.ai
+mb@xmap.ai
+m.b@xmap.ai
+batranmohamed@xmap.ai
+batran.mohamed@xmap.ai
+batranm@xmap.ai
+batran.m@xmap.ai
+bmohamed@xmap.ai
+b.mohamed@xmap.ai
+bm@xmap.ai
+b.m@xmap.ai
+mohamed-batran@xmap.ai
+m-batran@xmap.ai
+mohamed-b@xmap.ai
+m-b@xmap.ai
+batran-mohamed@xmap.ai
+batran-m@xmap.ai
+b-mohamed@xmap.ai
+b-m@xmap.ai
+mohamed_batran@xmap.ai
+m_batran@xmap.ai
+mohamed_b@xmap.ai
+m_b@xmap.ai
+batran_mohamed@xmap.ai
+batran_m@xmap.ai
+b_mohamed@xmap.ai
+b_m@xmap.ai</textarea>
+			</div>
+		</div>
+	</div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

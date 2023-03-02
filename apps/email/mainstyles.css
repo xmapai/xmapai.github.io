@@ -1,0 +1,310 @@
+/*#wrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 940px;
+	min-height: 500px;
+	background-color: #999;
+}*/
+body,html{
+	height:100%;
+	vertical-align: middle;
+}
+
+#wrap{
+	min-width: 600px;
+	height: 100%;
+	position: relative;
+/*	border-top: solid 3px #0090B4;*/
+	overflow: hidden;
+/*	background: -webkit-radial-gradient(#205983, #0A2742);
+	background: radial-gradient(#205983, #0A2742);*/
+
+}
+#the-line {
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	background-color: #0090B4;
+}
+.container {
+	width: 680px;
+	vertical-align: middle;
+	position: relative;
+	height: 100%;
+/*	pointer-events: none;*/
+}
+#empty-required {
+	margin: 10px 60px 0px 60px !important;
+	position: relative;
+	z-index: 3;
+}
+/*#sparrow {
+	width: 102px;
+	height: 92px;
+	background: #0090B4;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;/*
+	url(http://www.metricsparrow.com/wp-content/uploads/2012/06/metric-sparrow-logo1.png) no-repeat*/
+}
+#sparrow-nav{
+	float: right;
+	padding: 42px 0 0 0;
+}
+.just-right {
+	width: 	180px;
+}
+#nav-holder{
+	height: 55px;
+	width: 230	px;
+	position: absolute;
+	right: 0;
+	top: 3px;
+	z-index: 2;
+/*	float: right;*/
+}
+.spw-nav-item {
+	height: 55px;
+	width: 40px;
+	padding: 11px 14px 0 0;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	opacity: 0.2;
+/*	color: white;*/
+	color: #08c;
+	cursor: pointer;
+}
+.spw-nav-item:hover {
+	opacity: 0.7;
+/*	color: #08c;*/
+}
+.spw-nav-item a {
+	color: #08c;
+	text-decoration: none;
+}
+.dropdown-menu {
+	text-align: left;
+}
+
+#nav-tools {
+width: 50px;
+padding-right: 8px
+}
+/*
+.spw-nav-item a:hover {
+	color: #08c;
+	text-decoration: none;
+} */
+
+.spw-nav-item img {
+	padding-bottom: 4px;
+	padding-left: auto;
+	padding-right: auto;
+}
+#nav-blog {
+	padding-top: 13px;
+	padding-bottom: 3px;
+}
+/*#nav-tools {
+	padding-left: 48px
+}*/
+#nav-blog img {
+	padding-bottom: 6px;
+}
+
+#modalResult, .alert {
+	text-align: center;
+}
+
+#middle-center-zone {
+	width: 496px;
+	min-height: 369px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-top: -227px;
+    margin-left: -248px;
+    z-index: 4;
+}
+
+@media screen and (max-height: 539px) {
+	#middle-center-zone {
+		top: 0px;
+	    margin-top: 44px;
+	}
+}
+
+#permutateBtn {
+	width: 240px;
+	margin-top: 10px
+}
+#talking-sparrow {
+	width: 462px;
+	height: 70px;
+	margin-top: 1px;
+}
+#mr-sparrow {
+	width: 84px;
+	height: 69px;
+	float: left;
+	background: transparent url('../img/speaking-metric-sparrow.png') no-repeat left top;
+	cursor: pointer;
+}
+#sparrow-message {
+	width: 378px;
+	height: 48px;
+	float: left;
+	background: #fff url('../img/metric-sparrow-toolkit.png') no-repeat left top;
+	cursor: pointer;
+	display: none;
+}
+#permuteholder{
+	padding: 16px;
+	text-align: center;
+	width: 462px;
+	min-height: 300px;
+	margin: auto auto;
+	display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255); 
+    border: 1px solid rgb(0, 72, 255);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+#the-fields{
+	margin: 0 auto;
+}
+#output {
+	text-align: center;
+}
+.control-label {
+	width: 100px;
+}
+.controls {
+	margin-left: 115px;
+}
+#finalResult {
+	width: 100%;
+	max-width: 400px;
+}
+#centerTxtArea {
+	text-align: center;
+}
+#modalResult{
+	max-width: 460px;
+}
+#empty-required {
+	margin: 10px 200px 0px 200px
+}
+.add-on {
+	font-family: Georgia, Times, serif;
+}
+.control-group.warning .input-prepend .add-on {
+	background-color: rgb(255, 230, 174);
+}
+.control-group.warning input {
+	color: #444;
+}
+.control-group {
+	float: left;
+	margin: 10px 0 0 10px;
+}
+#more-domains {
+	margin-top: 14px;
+	margin-bottom: 14px;	
+}
+#fewer-domains {
+	margin-top: 14px;
+	margin-bottom: 14px;	
+}
+.optional .add-on {
+	color: #999;
+}
+#permuteholder a {
+	color: #333;
+}
+#permuteholder a:hover{
+	color: #08c;
+}
+.btn-success.hover {
+  background-image:none !important;
+}
+
+input:focus:-moz-placeholder {
+  color: #bbb;
+}
+
+input:focus:-ms-input-placeholder {
+  color: #bbb;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #bbb;
+}
+.not-initial {
+	display: none;
+}
+#copy-permutations {
+	display: inline !important;
+}
+.bio-pic {
+	width: 200px;
+	height: 200px;
+	margin: 0 0 10px 36px;
+}
+#modalBio .modal-footer {
+	text-align: center;
+}
+
+#modalBio .modal-body p:last-child {
+	margin-bottom: 0;
+}
+#the-instructions {
+	width: 100px;
+	height: 20px;
+	padding: 5px;
+	background-color: #0090B4;
+	background-color: rgb(192, 108, 0);
+	color: white;
+	position: fixed;
+	left: -41px;
+	bottom: 10%;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0 0 8px 8px;
+	border: 1px solid rgba(256,256,256,0.25);
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	letter-spacing: 1px;
+	opacity: 0.75;
+/*	box-shadow: -1px 1px 5px rgba(0,0,0,0.8);*/
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg); /* IE 9 */
+	-moz-transform:rotate(-90deg); /* Firefox */
+	-webkit-transform:rotate(-90deg); /* Safari and Chrome */
+	-o-transform:rotate(-90deg); /* Opera */
+}
+#the-instructions:hover {
+	background-color: rgb(255, 102, 0);
+	opacity: 0.75;
+}
+/*#copy-permutations.zeroclipboard-is-hover {
+	color: #ffffff;
+	background-color: #51a351;
+  *background-color: #499249;
+}
+#copy-permutations.zeroclipboard-is-active {
+  background-color: #408140 \9;
+}*/
+/*::selection {
+	background-color: #fff2a8 !important;
+}
+::-moz-selection {
+	background-color: #fff2a8!important;
+}
+::-webkit-selection {
+	background-color: #fff2a8!important;
+}*/
